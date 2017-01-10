@@ -1,6 +1,7 @@
 # encoding: utf-8
 require_relative '../spec_helper'
-require "logstash/filters/collect"
+require 'json'
+require 'logstash/filters/collect'
 
 describe LogStash::Filters::Collect do
   #config.expect_with(:rspec) { |c| c.syntax = :should }
@@ -62,6 +63,13 @@ describe LogStash::Filters::Collect do
     config = {'field' => 'people', 'property' => %w(person name), 'collection' => 'names'}
     f = LogStash::Filters::Collect.new(config)
     e = get_event({'people' => ppl})
+    f.filter(e)
+    expect(e.get('names').class).to be(Array)
+    expect(e.get('names').include?('Mike')).to be(true)
+    expect(e.get('names').include?('Sam')).to be(true)
+
+
+    e = get_event({'people' => JSON.generate(ppl)})
     f.filter(e)
     expect(e.get('names').class).to be(Array)
     expect(e.get('names').include?('Mike')).to be(true)

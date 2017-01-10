@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-filter-collect'
-  s.version       = '1.0.0'
+  s.version       = '1.0.1'
   s.licenses      = ['Apache License (2.0)']
   s.summary       = 'Collect list of properties from list of objects'
   s.homepage      = 'http://mikeski.net'

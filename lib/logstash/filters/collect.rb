@@ -1,6 +1,7 @@
 # encoding: utf-8
-require "logstash/filters/base"
-require "logstash/namespace"
+require 'json'
+require 'logstash/filters/base'
+require 'logstash/namespace'
 
 # This  filter will replace the contents of the default 
 # message field with whatever you specify in the configuration.
@@ -51,8 +52,16 @@ class LogStash::Filters::Collect < LogStash::Filters::Base
   def filter(event)
     object_array = event.get(@field)
     if not object_array.class == Array
-      plugin_error("Error, #{@field} is not an array", event)
-      return
+      begin
+        object_array = JSON.parse(object_array)
+      rescue
+        nil
+      end
+
+      if not object_array.class == Array
+        plugin_error("Error, #{@field} is not an array or parseable JSON", event)
+        return
+      end
     end
 
     new_collection = []
