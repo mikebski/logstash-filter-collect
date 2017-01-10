@@ -6,6 +6,8 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 
 Author: Mike Baranski (mike.baranski@gmail.com).  Contributions are welcome.
 
+[![Build Status](https://travis-ci.org/mikebski/logstash-filter-datepart.svg?branch=master)](https://travis-ci.org/mikebski/logstash-filter-datepart)
+
 ## License ##
 
 Copyright (c) 2014–2017 Mike Baranski <http://www.mikeski.net>

@@ -13,7 +13,7 @@ describe LogStash::Filters::Collect do
   end
 
   it 'Test get_event method' do
-    e = get_event({'field1': 'val1'})
+    e = get_event({'field1' => 'val1'})
     e.set('test', 1234)
     e.to_hash
   end
