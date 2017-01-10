@@ -58,3 +58,7 @@ With this filter plugin, the following configuration will do that:
         'property' => ['person' 'name'], 
         'collection' => 'names'
     }
+    
+Here is a quick one-line example of using this plugin:
+
+    echo '[{ "person": { "id": 1, "name": "Mike" } }, { "person": { "id": 2, "name": "Sam" } }]' |  ~/apps/logstash-5.1.1/bin/logstash -e 'filter { collect { field => "message" property => ["person", "name"] collection => "names"} } output { stdout { codec=> rubydebug}}'
