@@ -6,6 +6,7 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 
 Author: Mike Baranski (mike.baranski@gmail.com).  Contributions are welcome.
 
+[![Gem Version](https://badge.fury.io/rb/logstash-filter-collect.svg?reload=1)](https://badge.fury.io/rb/logstash-filter-collect)
 [![Build Status](https://travis-ci.org/mikebski/logstash-filter-datepart.svg?branch=master)](https://travis-ci.org/mikebski/logstash-filter-datepart)
 
 ## License ##
