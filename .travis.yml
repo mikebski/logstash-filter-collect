@@ -7,7 +7,7 @@ cache:
 jdk:
   - oraclejdk8
 rvm:
-  - jruby-1.7.25
+  #- jruby-1.7.25
   - jruby-9.1.5.0
 before-install: []
 script:
