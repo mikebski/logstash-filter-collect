@@ -8,7 +8,8 @@ Author: Mike Baranski (mike.baranski@gmail.com).  Contributions are welcome.
 
 [![Gem Version](https://badge.fury.io/rb/logstash-filter-collect.svg?reload=1)](https://badge.fury.io/rb/logstash-filter-collect)
 [![Build Status](https://travis-ci.org/mikebski/logstash-filter-collect.svg?branch=master)](https://travis-ci.org/mikebski/logstash-filter-collect)
-
+[![Code Climate](https://codeclimate.com/github/mikebski/logstash-filter-collect/badges/gpa.svg?reload=1)](https://codeclimate.com/github/mikebski/logstash-filter-collect/badges/gpa.svg)
+[![Coverate](https://codeclimate.com/github/mikebski/logstash-filter-collect/badges/coverage.svg?reload=1)](https://codeclimate.com/github/mikebski/logstash-filter-collect/badges/coverage.svg)
 ## License ##
 
 Copyright (c) 2014–2017 Mike Baranski <http://www.mikeski.net>
