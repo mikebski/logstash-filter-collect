@@ -124,9 +124,10 @@ PLATFORMS
   java
 
 DEPENDENCIES
-  codeclimate-test-reporter
+  codeclimate-test-reporter (~> 1.0.0)
   logstash-devutils
   logstash-filter-collect!
+  simplecov
 
 BUNDLED WITH
    1.13.7
