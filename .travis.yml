@@ -13,6 +13,9 @@ before-install: []
 script:
 - bundle exec gem list
 - bundle exec rspec spec
+- bundle exec codeclimate-test-reporter
 env:
 - JRUBY_OPTS="--debug"
 addons:
+    code_climate:
+        repo_token: 1bdb0cb47f17fba171838cb8f4e3fa8f2a84a9980e6c042e967e7120c7b97202
